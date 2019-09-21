@@ -32,8 +32,11 @@ reactgh() { cd ~/github/react/$@;ls; };
 
 # Function git
 gcheck() { git checkout $1; };
-initgh() { git add .;git commit -m $1;git remote add origin https://github.com/$1;git push origin master; };
-upgh() { git add .;git commit -m $1;git push $2; };
+initgh() { git init;git add .;git commit -m $1;git remote add origin git@github.com:brunohendias/$2.git;git push -u origin master; };
+upgh() { git add .;git commit -m $1;git push $2 $3; };
 
 # Function npm
 nrun() { npm run $@; };
+
+# Function binario global
+binario() { ARQUIVO=`locate $1`;sudo cp $ARQUIVO /usr/bin/$2;ARQUIVO=""; };

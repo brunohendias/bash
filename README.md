@@ -31,9 +31,13 @@ ex: instalar() { sudo apt-get install $1; } ficando assim: instalar firefox
 #Mapa do arquivo
 
 # apt-get
+
 apti comando = instalar
+
 aptr comando = remover
-apta comando = autoremove
+
+apta = autoremove
+
 atualizar = apt-get update, upgrade, dist-upgrade
 
 # serviços
@@ -44,8 +48,11 @@ tamanho = pegar o tamanho de tudo na pasta recorrente e salvar no arquivo tamanh
 
 # git
 initgh "commit" usuario/nomerepo.git = inicializa o git e sobe o projeto para o github
+
 upgh "commit" branch = atualiza os arquivos do repositorio e sobe o projeto para o github
+
 gcheck branch = troca a branch
+
 pushpages = Para quem utiliza vue e quer hospedar o site no github pages
 
 # npm
@@ -53,3 +60,6 @@ nrun comando = npm run ...
 
 # Background
 bcg comando = roda qualquer comando em background liberando o terminal, primeiro instale o nohup
+
+# Executavel global
+binario nome_arquivo novo_nome = localiza o arquivo e move ele para o diretorio /usr/bin/
