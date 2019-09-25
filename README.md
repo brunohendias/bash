@@ -53,6 +53,8 @@ upgh "commit" branch = atualiza os arquivos do repositorio e sobe o projeto para
 
 gcheck branch = troca a branch
 
+gclone dono nome_repositorio = clona repositorio do github pelo SSH
+
 pushpages = Para quem utiliza vue e quer hospedar o site no github pages
 
 # npm

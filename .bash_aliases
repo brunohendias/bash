@@ -31,6 +31,7 @@ vuegh() { cd ~/github/vue/$@;ls; };
 reactgh() { cd ~/github/react/$@;ls; };
 
 # Function git
+gclone () { git clone git@github.com:$1/$2.git; };
 gcheck() { git checkout $1; };
 initgh() { git init;git add .;git commit -m $1;git remote add origin git@github.com:brunohendias/$2.git;git push -u origin master; };
 upgh() { git add .;git commit -m $1;git push $2 $3; };
