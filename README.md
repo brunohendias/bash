@@ -65,3 +65,8 @@ bcg comando = roda qualquer comando em background liberando o terminal, primeiro
 
 # Executavel global
 binario nome_arquivo novo_nome = localiza o arquivo e move ele para o diretorio /usr/bin/
+
+
+# Codecs para reproduzir video no navegador
+
+arquivo: codecs_video_fedora.sh
