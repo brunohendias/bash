@@ -1,36 +1,37 @@
 # Alias para bash
 
-#O que e Alias?
+# O que e Alias?
 
 No bash, um alias é uma espécie de apelido para um comando ou uma série de comandos.
 Por exemplo, se eu uso com frequência o comando ls -lh, posso criar um alias para o comando ls:
 alias ls="ls -lh"
 A partir de agora, toda vez que eu digitar o comando ls, o bash interpretará como ls -lh, automaticamente.
 
-#Como utilizo os alias do arquivo?
+# Como utilizo os alias do arquivo?
 
 Mova ou faça uma copia do arquivo .bash_alias para a pasta do usuario ($HOME)
 feche o terminal e abra novamente
 apos isso digite a palavra e o bloco de comando sera executado.
 
-#Mas e se eu quiser passar algum parametro no alias?
+# Mas e se eu quiser passar algum parametro no alias?
 
 Para isso existe as funções, 
 que consiste em executar um bloco de codigo quando ela for chamada.
 
-#E como crio as funções?
+# E como crio as funções?
 
 Simples, no arquivo .bashrc ou .bash_alias digite:
 teste(){ echo "criando uma função"; } sempre finalizando com ;
 
-#Ta mas como passo os parametros?
+# Ta mas como passo os parametros?
 
 Mais simples ainda, somente colocando ( $1, $2, $3 ... ou $@ para pegar todos os paramentros )
 ex: instalar() { sudo apt-get install $1; } ficando assim: instalar firefox
 
 #Mapa do arquivo
 
-# apt-get
+# apt-get && dnf
+dnf (fedora) altere o apt pelo dnf
 
 apti comando = instalar
 
@@ -40,8 +41,12 @@ apta = autoremove
 
 atualizar = apt-get update, upgrade, dist-upgrade
 
-# serviços
+atualizarf = dnf update, upgrade
+
+# listagem
 lservice = listar todos os serviços
+
+lkernel = listar todos os kernel instalados (fedora)
 
 # tamanho arquivos
 tamanho = pegar o tamanho de tudo na pasta recorrente e salvar no arquivo tamanho_diretorio
@@ -66,7 +71,10 @@ bcg comando = roda qualquer comando em background liberando o terminal, primeiro
 # Executavel global
 binario nome_arquivo novo_nome = localiza o arquivo e move ele para o diretorio /usr/bin/
 
+# abre arquivo
+c nome_arquivo comando = localiza o arquivo ex: c teste.txt nano
 
 # Codecs para reproduzir video no navegador
+Para executar digite na pasta do arquivo chmod +x codecs_video_fedora.sh, e depois execute ./codecs_video_fedora.sh
 
-arquivo: codecs_video_fedora.sh
+arquivo: codecs_video_fedora.sh.
