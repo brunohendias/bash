@@ -72,6 +72,9 @@ bcg comando = roda qualquer comando em background liberando o terminal, primeiro
 binario nome_arquivo novo_nome = localiza o arquivo e move ele para o diretorio /usr/bin/
 
 # abre arquivo
+antes de fazer a busca atualize o banco de dados com o comando sudo updatedb 
+(caso o arquivo seja recente ou nao tenha cido registrado)
+
 c nome_arquivo comando = localiza o arquivo ex: c teste.txt nano
 
 # Codecs para reproduzir video no navegador
