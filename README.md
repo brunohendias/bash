@@ -8,6 +8,29 @@ e executar cada um no seu devido lugar
 
 obs: dentro dos arquivos eu deixei comentarios explicando oque precisa ser feito
 
+# Bash mais organizado
+
+## Separando e adicionando as funcionalidades no bashrc
+
+Você que gosta de um sistema mais organizado eu estou propondo uma nova forma de organizar seus arquivos do bash que ficam no $HOME. 
+A nova estrutura consiste em separar as funcionalidades em modulos ficando mais organizado e facil de mexer.
+
+## Nova estrutura
+
+.bashrc 
+.modulos/
+    .bash_aliases
+    .bash_functions
+    .bash_colors
+    .bash_variables
+    ...
+
+Dentro da pasta arquivos_bash você pode conferir essa nova estruta já com alguns exemplos prontos.
+Caso se enteresse você pode executar o arquivo configurabash.sh que esta dentro desta pasta.
+Ele irá fazer um backup do seu .bashrc original e montará a nova estrutura já funcionando
+
+obs: O arquivo .bashrc que esta nessa pasta é customizado.
+
 # Alias para bash
 
 # O que e Alias?
@@ -34,13 +57,11 @@ ex: instalar() { sudo apt-get install $1; } ficando assim: instalar firefox
 
 # Como utilizo os alias do arquivo?
 
-Acesse a pasta arquivos_bash, execute chmod +x configurabash.sh && ./configurabash.sh
+No topico acima #(Bash mais organizado) explica como utilizar
 
-Esse script irá mover os arquivos para o diretorio $HOME
+# Mapa do arquivo
 
-#Mapa do arquivo
-
-# apt-get && dnf
+## apt-get && dnf
 
 dnf (fedora) altere o apt pelo dnf
 
@@ -54,17 +75,17 @@ atualizar = apt-get update, upgrade, dist-upgrade
 
 atualizarf = dnf update, upgrade
 
-# listagem
+## listagem
 
 lservice = listar todos os serviços
 
 lkernel = listar todos os kernel instalados (fedora)
 
-# tamanho arquivos
+## tamanho arquivos
 
 tamanho = pegar o tamanho de tudo na pasta recorrente e salvar no arquivo tamanho_diretorio
 
-# git
+## git
 
 initgh "commit" usuario/nomerepo.git = inicializa o git e sobe o projeto para o github
 
@@ -76,29 +97,29 @@ gclone dono nome_repositorio = clona repositorio do github pelo SSH
 
 pushpages = Para quem utiliza vue e quer hospedar o site no github pages
 
-# npm
+## npm
 
 nrun comando = npm run ... 
 
-# Background
+## Background
 
 bcg comando = roda qualquer comando em background liberando o terminal, primeiro instale o nohup
 
-# Executavel global
+## Executavel global
 
 binario nome_arquivo novo_nome = localiza o arquivo e move ele para o diretorio /usr/bin/
 
-# abre arquivo
+## abre arquivo
 
 antes de fazer a busca atualize o banco de dados com o comando sudo updatedb 
 (caso o arquivo seja recente ou nao tenha cido registrado)
 
 c nome_arquivo comando = localiza o arquivo ex: c teste.txt nano
 
-# Codecs para reproduzir video no navegador
+## Codecs para reproduzir video no navegador
 
 Acesse a pasta fedora, execute chmod +x codecs_video_fedora.sh && ./codecs_video_fedora.sh
 
-## Usuario
+# Usuario
 
 Nessa pasta eu guardo alguns comandos para fins de documentação e consulta
