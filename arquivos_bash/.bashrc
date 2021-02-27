@@ -4,10 +4,10 @@ case $- in
 esac
 
 # Modulos do bash
-. .modulos/.bash_colors
-. .modulos/.bash_variables
-. .modulos/.bash_aliases
-. .modulos/.bash_functions
+. $HOME/.modulos/.bash_colors
+. $HOME/.modulos/.bash_variables
+. $HOME/.modulos/.bash_aliases
+. $HOME/.modulos/.bash_functions
 
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
