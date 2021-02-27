@@ -13,7 +13,7 @@ alias apta='sudo apt autoremove'
 
 # git alias
 alias pushpages="git add .;git commit -m 'first';buil;mv dist/ ../;mkdir ../novo/;mv * ../novo;git checkout -b gh-pages;mv ../dist/* .;git add .;git commit -m 'build';master;mv ../novo/* .;rm -r ../dist ../novo;ls .";
-
+alias echo_git_branch="git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'";
 # dnf alias (fedora)
 alias atualizarf="echo 'Update';sudo dnf update;echo 'Upgrade';sudo dnf upgrade -y;"
 alias dnfi='sudo dnf install';
