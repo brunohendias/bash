@@ -1,5 +1,5 @@
 echo "[DESCOMPACTANDO ARQUIVOS]"
-cd flat-remix/.icons
+cd .icons
 tar -xvf 02-Flat-Remix-Blue-Dark_20210121.tar.xz Flat-Remix-Blue-Dark
 cd ../.themes
 tar -xvf 06-Flat-Remix-GTK-Blue-Dark-Solid_20201129.tar.xz Flat-Remix-GTK-Blue-Dark-Solid
