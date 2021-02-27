@@ -3,7 +3,7 @@ alias ll='ls -alF';
 alias la='ls -a';
 alias l='ls -CF';
 alias ls='ls --color=auto';
-alias grep'grep --color=auto';
+alias grep='grep --color=auto';
 
 # apt alias
 alias atualizar="echo 'Update';sudo apt update;echo 'Upgrade';sudo apt upgrade -y;echo 'Dist upgrade';sudo apt dist-upgrade"
