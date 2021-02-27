@@ -8,6 +8,13 @@ e executar cada um no seu devido lugar
 
 obs: dentro dos arquivos eu deixei comentarios explicando oque precisa ser feito
 
+# Flat-remix
+
+Para quem gosta de modificar o sistema existe esse pacote de modificações graficas
+dentro desse arquivo você terá o pacote GTK e o Icons
+para installer basta clonar esse repositorio, entrar na pasta flat-remix, dar permissão de execução
+e digitar bash install.sh
+
 # Bash mais organizado
 
 ## Separando e adicionando as funcionalidades no bashrc
@@ -17,7 +24,7 @@ A nova estrutura consiste em separar as funcionalidades em modulos ficando mais 
 
 ## Nova estrutura
 
-.bashrc 
+.bashrc
 .modulos/
     .bash_aliases
     .bash_functions
@@ -26,7 +33,7 @@ A nova estrutura consiste em separar as funcionalidades em modulos ficando mais 
     ...
 
 Dentro da pasta arquivos_bash você pode conferir essa nova estruta já com alguns exemplos prontos.
-Caso se enteresse você pode executar o arquivo configurabash.sh que esta dentro desta pasta.
+Caso se enteresse você pode executar o arquivo install.sh que esta dentro desta pasta.
 Ele irá fazer um backup do seu .bashrc original e montará a nova estrutura já funcionando
 
 obs: O arquivo .bashrc que esta nessa pasta é customizado.
