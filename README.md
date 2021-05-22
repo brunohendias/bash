@@ -23,7 +23,7 @@ Você que gosta de um sistema mais organizado eu estou propondo uma nova forma d
 A nova estrutura consiste em separar as funcionalidades em modulos ficando mais organizado e facil de mexer.
 
 ## Nova estrutura
-
+```
 .bashrc
 .modulos/
     .bash_aliases
@@ -31,6 +31,7 @@ A nova estrutura consiste em separar as funcionalidades em modulos ficando mais 
     .bash_colors
     .bash_variables
     ...
+```
 
 Dentro da pasta arquivos_bash você pode conferir essa nova estruta já com alguns exemplos prontos.
 Caso se enteresse você pode executar o arquivo install.sh que esta dentro desta pasta.
