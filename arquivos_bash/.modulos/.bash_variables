@@ -2,3 +2,5 @@ HISTCONTROL=ignoreboth
 HISTSIZE=1000
 HISTFILESIZE=2000
 PS1="${RED}>―[${WHITE}\u${RED}]―[ ${GREEN}\w${RED} ] ${WHITE}\$(echo_git_branch)\n ${RED}\$${WHITE}--${BLUE}>>> ${WHITE}"
+GITHUB=$HOME/Github
+LARAVEL=$GITHUB/Laravel
