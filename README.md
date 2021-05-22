@@ -68,25 +68,13 @@ No topico acima #(Bash mais organizado) explica como utilizar
 
 # Mapa do arquivo
 
-## apt-get && dnf
-
-dnf (fedora) altere o apt pelo dnf
-
-apti comando = instalar
-
-aptr comando = remover
-
-apta = autoremove
+## apt-get
 
 atualizar = apt-get update, upgrade, dist-upgrade
-
-atualizarf = dnf update, upgrade
 
 ## listagem
 
 lservice = listar todos os serviços
-
-lkernel = listar todos os kernel instalados (fedora)
 
 ## tamanho arquivos
 
@@ -94,38 +82,7 @@ tamanho = pegar o tamanho de tudo na pasta recorrente e salvar no arquivo tamanh
 
 ## git
 
-initgh "commit" usuario/nomerepo.git = inicializa o git e sobe o projeto para o github
-
-upgh "commit" branch = atualiza os arquivos do repositorio e sobe o projeto para o github
-
-gcheck branch = troca a branch
-
 gclone dono nome_repositorio = clona repositorio do github pelo SSH
-
-pushpages = Para quem utiliza vue e quer hospedar o site no github pages
-
-## npm
-
-nrun comando = npm run ... 
-
-## Background
-
-bcg comando = roda qualquer comando em background liberando o terminal, primeiro instale o nohup
-
-## Executavel global
-
-binario nome_arquivo novo_nome = localiza o arquivo e move ele para o diretorio /usr/bin/
-
-## abre arquivo
-
-antes de fazer a busca atualize o banco de dados com o comando sudo updatedb 
-(caso o arquivo seja recente ou nao tenha cido registrado)
-
-c nome_arquivo comando = localiza o arquivo ex: c teste.txt nano
-
-## Codecs para reproduzir video no navegador
-
-Acesse a pasta fedora, execute chmod +x codecs_video_fedora.sh && ./codecs_video_fedora.sh
 
 # Usuario
 
